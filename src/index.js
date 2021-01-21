@@ -3,10 +3,23 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { createStore, combineReducers} from "redux";
+import { Provider } from "react-redux";
+import { reducer1,reducer2 } from './reducers/Reducer';
+import Howtouseref from './Howtouseref';
+import Howtousecallback from './Howtousecallback';
+// const  master = combineReducers({
+//     red1:reducer1,
+//     red2:reducer2
+// })
+const store = createStore(reducer1,window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+   {/*<Provider  store={store}>*/}
+
+       <Howtousecallback />
+   {/*</Provider>*/}
   </React.StrictMode>,
   document.getElementById('root')
 );
