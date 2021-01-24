@@ -1,16 +1,16 @@
 import React ,{ useState } from 'react'
 import useInput from "./useInput";
 
-export default function UserForm(){
-    const [firstName,bindFirstName,resetFirstName]=useInput('')
-    const [lastName,bindLastName,resetLastName]=useInput('')
-    const [email,bindEmail,resetEmail]=useInput('')
-    const [password,bindPassword,resetPassword]=useInput('')
+    export default function UserForm(){
+    const [firstName,bindFirstName,resetFirstName]  = useInput('')
+    const [lastName ,bindLastName ,resetLastName ]  = useInput('')
+    const [email    ,bindEmail    ,resetEmail    ]  = useInput('')
+    const [password ,bindPassword ,resetPassword ]  = useInput('')
 
 
-    const submitHandler = e =>{
+    const submitHandler = e => {
         e.preventDefault()
-        alert(`Hello ${firstName} ${lastName}`)
+        alert(`Hello ${firstName} ${lastName} ${email} ${password}`)
         resetFirstName()
         resetLastName()
         resetEmail()

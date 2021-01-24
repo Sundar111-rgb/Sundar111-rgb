@@ -9,6 +9,7 @@ import { reducer1,reducer2 } from './reducers/Reducer';
 import Howtouseref from './Howtouseref';
 import Howtousecallback from './Howtousecallback';
 import UserForm from './UserForm';
+import LoginForms from "./LoginForms";
 // const  master = combineReducers({
 //     red1:reducer1,
 //     red2:reducer2
@@ -19,7 +20,7 @@ ReactDOM.render(
   <React.StrictMode>
    {/*<Provider  store={store}>*/}
 
-       <UserForm />
+       <LoginForms />
    {/*</Provider>*/}
   </React.StrictMode>,
   document.getElementById('root')
